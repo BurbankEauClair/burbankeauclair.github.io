@@ -10,7 +10,7 @@ body {
 	padding-top: 80px;
 	padding-left: 5px;
  	background: url(
-'img/airport.jpg') no-repeat center center fixed; 
+'../img/airport.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
