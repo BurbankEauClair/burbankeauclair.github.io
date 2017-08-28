@@ -9,7 +9,7 @@ var DepartureBoard = function (element, options) {
 	element.className += ' departure-board';
 
 	var rowCount = options.rowCount || 1,
-		letterCount = options.letterCount || 25,
+		letterCount = options.letterCount || 20,
 		letter,
 		rowElement;
 	
@@ -61,7 +61,7 @@ DepartureBoard.prototype.setValue = function (value) {
 				window.setTimeout (function () {
 					var letterValue = value[r].substr (i, 1) || '';
 					me._letters[r][i].setValue (letterValue);
-				}, 2000 * r + 25 * i + Math.random () * 400);
+				}, 2000 * r + 20 * i + Math.random () * 400);
 			})(r, i);
 		}
 	}
