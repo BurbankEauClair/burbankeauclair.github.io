@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Burbank Eau Clair | Creative Minds</title>
+		<link rel="stylesheet" href="css/departure-board.css" />
+	</head>
+	
+	<body>
+		<div id="test"></div>
+		
+		<script src="js/departure-board.js"></script>
+		<script>
+		
+			var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 3, letterCount: 20 }); 
+			board.setValue (['19:30  Burbank    CA', '19:42  Eau Clair  WI', '19:55  Stockholm  SE']);
+			
+			window.setTimeout (function () {
+			 	board.setValue (['Mgmt Consulting ','Digt Transformation','Fncl Services ']);
+			}, 12000);
+
+		</script>
+	</body>
+</html>
