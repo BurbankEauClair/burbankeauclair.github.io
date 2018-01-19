@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">  
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" />
+  <style type="text/css">body{margin: auto;
+      padding:0;
+      background-color:black;      
+    }
+    .loader{
+      width:100%;
+      height:100%;
+      position:fixed;
+      top:0px;
+      left:0px;
+      background-color:#00a7e3;       
+      color: white;
+      
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Roboto Condensed', sans-serif;
+      z-index: 999
+    }
+    #turn{
+      width:100%;
+      height:100%;
+      position:fixed;
+      top:0px;
+      left:0px;
+      background-color:black;       
+      color: white;
+      display:none;
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Roboto Condensed', sans-serif;
+      z-index: 100
+    }
+
+    .turn-content{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+
+    }
+
+    .turn-content img{
+      max-width:100%;
+    }
+
+    canvas{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;  
+      margin: auto;
+    }
+
+    #game-container{
+     position: relative;
+     width: 100vw;
+     height: 85.5vh
+   }
+
+   #game-container.ipad{
+    height: 96vh
+  }
+
+  #game-container.iphone5{
+    height: 70vh
+  }
+  #game-container.iphone6{
+    height: 90vh
+  }
+}
+
+</style>
+<script type="text/javascript">
+  var startinpage=true;
+  var mobile=true;
+</script>
+<script src="js/game/phaser.min.js"></script>
+<script src="js/game/gyro.min.js"></script>    
+<script src = "js/game/modal-cache4.js"></script>
+<script src = "js/game/splash-cache4.js"></script>
+<script src = "js/game/menu-cache4.js"></script>
+<script src = "js/game/howto-cache4.js"></script>
+<script src = "js/game/game-cache4.js"></script>
+<script src = "js/game/win-cache4.js"></script>
+<script src = "js/game/lose-cache4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.0/mobile-detect.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+  $(function(){
+
+    md = new MobileDetect(window.navigator.userAgent);      
+
+    console.log(md.mobile());
+
+    if(md.tablet()=="iPad"){
+      
+      $("#game-container").addClass("ipad");
+    }
+
+
+    if(md.mobile()=="iPhone"){
+
+      
+      console.log(window.innerWidth);
+      if(window.innerWidth=="568"){
+
+        
+        $("#game-container").addClass("iphone5");
+      }
+      if(window.innerWidth=="667"){
+         
+        $("#game-container").addClass("iphone6");
+      }
+
+    }
+
+
+  })
+
+
+</script>
+</head>
+
+<body>
+
+  <div id="game-container">
+  <div class="loader"><div class="turn-content"><img class="img-responsive" src="siteimages/splash-loading.gif" /></div></div>
+    <div id="turn"> <div class="turn-content">  <img src="siteimages/gif-landscape-view.gif" /></div></div>
+    
+  </div>
+</body>
+</html>
