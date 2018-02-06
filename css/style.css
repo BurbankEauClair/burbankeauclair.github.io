@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&subset=latin-ext');
+body {
+  background: #f1f2f3;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.fakechatbot-typing, .fakechatbot-message {
+  display: none;
+}
+.fakechatbot-typing-active, .fakechatbot-message-display {
+  display: block;
+}
+#chatbot {
+  max-width: auto;
+  min-width: 280px;
+  margin: 90px 30%;
+  max-height: auto;
+position: relative;
+}
+
+p {
+  margin-top:0px;
+}
+
+.user p, .bot p {
+  background: white;
+  color: #444;
+  font-size: 14px;
+  /*border: 1px solid #888;*/
+  padding: 10px 0 10px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 1px 1px #ddd;
+  animation: slideUp 1s ease;
+  line-height: 1.4em;
+  width: auto;
+  max-width: 400px;
+  letter-spacing: 0.5px;
+}
+.bot_container {
+  width: 600px;
+  height: 80px;
+}
+.bot p {
+  float: right !important;
+  background: #03A9F4;
+  color: white;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.fakechatbot-typing {
+  font-style: italic;
+  color: #888;
+  font-size: 12px;
+  padding: 15px;
+  letter-spacing: 1px;
+  animation: fade 2s ease;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+
+p.time {
+  display: block !important;
+  width: 95%;
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 5px;
+  margin-top: -10px;
+  font-size: 8px;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #aaa;
+  background: none !important;
+  box-shadow: none
+}
+p.time.right {
+	width: 100%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+@media only screen and (max-width : 510px)
+{
+#chatbot {
+  margin: 0;
+  max-width: auto;
+}
+.bot_container {
+  width: auto;
+
+}
