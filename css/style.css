@@ -35,7 +35,7 @@ p {
   animation: slideUp 1s ease;
   line-height: 1.4em;
   width: auto;
-  max-width: 400px;
+  max-width: 70%;
   letter-spacing: 0.5px;
 }
 .bot_container {
@@ -118,5 +118,8 @@ p.time.right {
 }
 .bot_container {
   width: auto;
-
+}
+.user p, .bot p {
+max-width: 80%;
+}
 }
