@@ -78,12 +78,40 @@
 	drift.load('sben4re9zv52');
 	</script>
 	<!-- End of Async Drift Code -->
-
+<style>
+  .me-video-container {
+    overflow: hidden;
+    position: fixed;
+	z-index: 0;
+	opacity: 0.1;
+    width: 100vw;
+    height: 100vh; }
+  .me-video video.video {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
+    width: 100%;
+    height: 100%; }
+  .me-video .video-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .me-video .video-container {
+    position: relative;
+	overflow: hidden;
+    height: 56.25vw;
+	width: 100vw; }
+</style>
 <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
 
 <body data-rsssl="1" id="body" class="page-template-default page page-id-2542  very-first-init no-js kill-overlay before id-2542 hero-0 gap- scroll- color-scheme- has-sticky-header-enabled has-hamburger-menu-disabled">
 
-
+	<div class="me-video-container">
+		<video class="video" autoplay playsinline loop muted src="assets/loop.mp4" type="video/mp4"></video>	
+	</div>
 <div id="site" class="header-content-wrapper">
 
 	<div class="site-carry">
@@ -108,8 +136,9 @@
 											<a class="responsive-search" href="#"><span class="icon"><svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M12.8023435,11.8409402 L9.59762114,8.62300319 C10.4216116,7.67731629 10.8730808,6.48744865 10.8730808,5.24874487 C10.8730808,2.35463259 8.4342015,0 5.4365404,0 C2.4388793,0 0,2.35463259 0,5.24874487 C0,8.14285714 2.4388793,10.4974897 5.4365404,10.4974897 C6.56190426,10.4974897 7.63432095,10.1697855 8.5512053,9.54769512 L11.7802739,12.7900502 C11.915242,12.9253765 12.0967751,13 12.2913087,13 C12.475442,13 12.6501204,12.9322227 12.7827247,12.8089913 C13.0644793,12.5472387 13.0734614,12.1131903 12.8023435,11.8409402 L12.8023435,11.8409402 Z M5.4365404,1.36923779 C7.65228517,1.36923779 9.45485286,3.10953902 9.45485286,5.24874487 C9.45485286,7.38795071 7.65228517,9.12825194 5.4365404,9.12825194 C3.22079563,9.12825194 1.41822793,7.38795071 1.41822793,5.24874487 C1.41822793,3.10953902 3.22079563,1.36923779 5.4365404,1.36923779 L5.4365404,1.36923779 Z" stroke="none" fill="#778BA2" fill-rule="evenodd"></path></svg></span></a>
 					
 					<ul id="menu-menu-1" class="top-menu right">
-						<!--<li id="nav-menu-item-2271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home top-level-item"><a href="index.html" class="ajax-link boohw">About</a></li>
-<li id="nav-menu-item-2396" class="menu-item menu-item-type-post_type menu-item-object-page top-level-item"><a href="brand-design-experience-agency/index.html" class="ajax-link boohw">Fast Track</a></li>
+						<li id="nav-menu-item-2271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home top-level-item"><a href="https://openbank.se" class="ajax-link boohw">.SE OB-API Registry</a></li>
+<!--
+						<li id="nav-menu-item-2396" class="menu-item menu-item-type-post_type menu-item-object-page top-level-item"><a href="brand-design-experience-agency/index.html" class="ajax-link boohw">Fast Track</a></li>
 						
 <li id="nav-menu-item-2263" class="menu-item menu-item-type-post_type menu-item-object-page top-level-item"><a href="contact/index.html" class="ajax-link boohw">Contact</a></li>
 </ul>
@@ -234,7 +263,14 @@ var wooSettings = {"cart_redirect":"no"};
 </script>
 <script type="text/javascript" src="themes/calafate/js/main-min.js"></script>
 <script type="text/javascript" src="wp-includes/js/wp-embed.min.js"></script>
-<!--
-<div id="drift-widget-container" style="position: absolute; z-index: 2147483647;"><iframe id="drift-widget" src="https://js.driftt.com/deploy/assets/index.html" title="Drift Messenger" role="complementary" class="drift-widget-welcome-online" style="border: none; display: block; height: 76px !important; width: 76px !important; position: fixed; top: auto; left: auto; bottom: 24px; right: 24px; visibility: visible; z-index: 2147483647; max-height: 100vh; max-width: 100vw; transition: none; background-image: none; background-color: transparent; opacity: 1; background-position: initial initial; background-repeat: initial initial;"></iframe></div>
--->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110940667-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110940667-2');
+</script>
+
 </body></html>
