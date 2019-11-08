@@ -1730,6 +1730,15 @@ body:not(.is-phone) .c-swiper-titles {
     }
 }
 
+@media (max-width: 499px) {
+    .startup-anim {
+        display: none;
+    }
+    .ignite {
+        margin-top: 100% !important;
+    }
+}
+
 @media (min-width:700px) {
     .c-case-column__content {
         display: flex;
