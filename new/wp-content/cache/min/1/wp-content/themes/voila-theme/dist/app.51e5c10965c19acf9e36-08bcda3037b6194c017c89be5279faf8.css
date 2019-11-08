@@ -8,6 +8,10 @@ body {
     margin: 0
 }
 
+img.logo {
+    width: 50%;
+}
+
 article,
 aside,
 footer,
@@ -1834,19 +1838,19 @@ body:not(.is-phone) .c-swiper-titles {
 }
 
 .c-hero__letter--a {
-    right: 10.95%;
-    width: 22%;
+    right: 10%;
+    width: 19%;
     bottom: 1.15%
 }
 
 .c-hero__letter--i {
-    right: 42.9%;
-    width: 7.9%
+    right: 65%;
+    width: 7.8%
 }
 
 .c-hero__letter--l {
-    right: 34.9%;
-    width: 6.6%
+    right: 32%;
+    width: 30%
 }
 
 .c-hero__letter--d {
