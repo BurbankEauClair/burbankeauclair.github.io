@@ -1737,6 +1737,10 @@ body:not(.is-phone) .c-swiper-titles {
     .ignite {
         margin-top: 100% !important;
     }
+    .cando {
+        margin-top: -33%;
+        margin-left: 16%;
+    }
 }
 
 @media (min-width:700px) {
