@@ -1728,20 +1728,35 @@ body:not(.is-phone) .c-swiper-titles {
     .c-case-columns__item--reverse-order .c-case-column__inner {
         align-items: flex-end
     }
+    .happy {
+        background-image: url(../../../../../../../../images/happy.jpg);
+        background-size: cover;
+        margin-left: -3%;
+        margin-top: -14%;
+        width: 100vw !important;
+        height: 100vh;
+    }
+    .engaging {
+        margin-top: 35%;
+        margin-left: 10%;
+    } 
 }
 
 @media (max-width: 499px) {
     .startup-anim {
         display: none;
     }
-    .ignite {
+    .engaging {
         font-size: 2em;
-        margin-top: 100% !important;
+        margin-top: 60vh;
+        margin-left: 3%;
+        width: 100vw;
     }
     .happy {
         background-image: url(../../../../../../../../images/happy.jpg);
         background-size: cover;
         margin-left: -10px;
+        width: 100vw !important;
     }
     .logo {
         width: 30% !important;
