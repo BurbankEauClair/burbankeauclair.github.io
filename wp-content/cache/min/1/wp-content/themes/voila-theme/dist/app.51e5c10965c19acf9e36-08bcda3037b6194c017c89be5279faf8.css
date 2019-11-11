@@ -1738,6 +1738,11 @@ body:not(.is-phone) .c-swiper-titles {
         font-size: 2em;
         margin-top: 100% !important;
     }
+    .happy {
+        background-image: url(../../../../../../../../images/happy.jpg);
+        background-size: cover;
+        margin-left: -10px;
+    }
     .logo {
         width: 30% !important;
     }
